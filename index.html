@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mitre Angle Calculator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mitre Angle Calculator Widget</title>
+  <style>
+    /* Hide the body to ensure nothing unintended is displayed */
+    body {
+      margin: 0;
+      padding: 0;
+      display: none;
+    }
+  </style>
 </head>
 <body>
-    <h1>Mitre Angle Calculator</h1>
-    <div id="mitre-angle-calculator-container"></div>
-    <script src="mitre-angle-calculator-widget.js"></script>
+  <!-- Only render if needed for debugging -->
+  <div id="debug-container">
+    <p>This is the Mitre Angle Calculator Widget loader. It should only be embedded elsewhere.</p>
+  </div>
+
+  <!-- Embed script auto-load -->
+  <script>
+    // Redirect or provide a proper response if someone directly visits this page
+    if (window.location === window.parent.location) {
+      document.body.style.display = 'block';
+    }
+  </script>
 </body>
 </html>
